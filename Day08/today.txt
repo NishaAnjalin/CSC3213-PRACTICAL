@@ -1,0 +1,25 @@
+nested if condition
+
+n1,n2,n3
+
+if condition1: 
+		cmp n1, n2
+		jge 11 : if outer if n1>=n2,1st if, n1
+		jl 12 : else n1<n2 ,1st if else , n2
+		
+		11 is the inner if:
+		cmp n1, n2 :inner if n1>=n2 
+		jge ms1
+		jl ms3
+		
+if condition2:
+	#Do something
+else:
+	#Do something else
+else: 
+12:
+cmp n2, n3
+jge ms2
+jle ms3
+
+outer else block
